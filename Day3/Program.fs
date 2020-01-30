@@ -40,17 +40,18 @@ type Memory = {
 
 let emptyState = {mm = Map.empty }
 
+(*
 let part2 =
     let initialPosition = { x = 0; y = 0 }
     let coordinates = Seq.fold walk initialPosition directions
     
     let numbersWritten = seq { for x in 1..Int32.MaxValue do yield x}
-    numbersWritten |> Seq.filter (fun n -> n > input)
+    numbersWritten |> Seq.filter (fun n -> n < input)
                    |> Seq.head
-     
+    *) 
     
 [<EntryPoint>]
 let main argv = 
     
-    printf "%A" part2
+    printf "%A" part1
     0 // return an integer exit code

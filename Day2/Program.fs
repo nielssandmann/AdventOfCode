@@ -1,4 +1,4 @@
-﻿open  AOCLib
+﻿open AOCLib
 
 let findMinAndMax xs =
   let min = Seq.min xs
